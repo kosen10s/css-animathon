@@ -102,7 +102,7 @@
 
 
 	// module
-	exports.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  max-width: 100%;\n}\nbody {\n  color: #000;\n  font-family: Avenir, \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, Verdana, Roboto, \"\\6E38\\30B4\\30B7\\30C3\\30AF\", \"Yu Gothic\", \"\\6E38\\30B4\\30B7\\30C3\\30AF\\4F53\", \"YuGothic\", \"\\30D2\\30E9\\30AE\\30CE\\89D2\\30B4   Pro W3\", \"Hiragino Kaku Gothic Pro\", \"Meiryo UI\", \"\\30E1\\30A4\\30EA\\30AA\", Meiryo, \"\\FF2D\\FF33   \\FF30\\30B4\\30B7\\30C3\\30AF\", \"MS PGothic\", sans-serif;\n  background-color: #ff0;\n  margin: 20px;\n}\nhtml {\n  border: 15px solid #000;\n  min-height: 100%;\n  box-sizing: border-box;\n}\n", ""]);
+	exports.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  max-width: 100%;\n}\nbody {\n  color: #000;\n  font-family: Avenir, \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, Verdana, Roboto, \"\\6E38\\30B4\\30B7\\30C3\\30AF\", \"Yu Gothic\", \"\\6E38\\30B4\\30B7\\30C3\\30AF\\4F53\", \"YuGothic\", \"\\30D2\\30E9\\30AE\\30CE\\89D2\\30B4   Pro W3\", \"Hiragino Kaku Gothic Pro\", \"Meiryo UI\", \"\\30E1\\30A4\\30EA\\30AA\", Meiryo, \"\\FF2D\\FF33   \\FF30\\30B4\\30B7\\30C3\\30AF\", \"MS PGothic\", sans-serif;\n  background-color: #ff0;\n  margin: 20px 40px;\n  overflow-x: hidden;\n}\nhtml {\n  border: 15px solid #000;\n  min-height: 100%;\n  box-sizing: border-box;\n}\n", ""]);
 
 	// exports
 
@@ -21467,6 +21467,14 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
+	var _AppHeader = __webpack_require__(179);
+
+	var _AppHeader2 = _interopRequireDefault(_AppHeader);
+
+	var _Entry = __webpack_require__(182);
+
+	var _Entry2 = _interopRequireDefault(_Entry);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21488,17 +21496,13 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'header',
+	        'div',
 	        null,
+	        _react2.default.createElement(_AppHeader2.default, null),
 	        _react2.default.createElement(
-	          'h1',
-	          { className: _app2.default.title },
-	          'CSS Animathon'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: _app2.default.description },
-	          'hack-a-thon for learning css animations powered by #kosen10s'
+	          'section',
+	          null,
+	          _react2.default.createElement(_Entry2.default, null)
 	        )
 	      );
 	    }
@@ -21544,12 +21548,280 @@
 
 
 	// module
-	exports.push([module.id, "._3J4VfRJpp3mtQGOG0kubDH {\n  font-size: 100px;\n  line-height: 120px;\n}\n._2vQ-E5X29XddQ-7X-1InVG {\n  font-size: 24px;\n  margin-left: 10px;\n}\n", ""]);
+	exports.push([module.id, "", ""]);
+
+	// exports
+
+
+/***/ },
+/* 179 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _app_header = __webpack_require__(180);
+
+	var _app_header2 = _interopRequireDefault(_app_header);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var TwitterShareButton = function (_React$Component) {
+	  _inherits(TwitterShareButton, _React$Component);
+
+	  function TwitterShareButton() {
+	    _classCallCheck(this, TwitterShareButton);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(TwitterShareButton).apply(this, arguments));
+	  }
+
+	  _createClass(TwitterShareButton, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'a',
+	        { href: 'https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fkosen10s.net%2Fcss-animathon&ref_src=twsrc%5Etfw&text=CSS%20animathon%20-%20hack-a-thon%20for%20learning%20css%20animathons%20powered%20by%20kosen10s&tw_p=tweetbutton&url=https%3A%2F%2Fkosen10s.net%2Fcss-animathon&via=kosen10s', className: _app_header2.default.tweet },
+	        'Twitterでシェア'
+	      );
+	    }
+	  }]);
+
+	  return TwitterShareButton;
+	}(_react2.default.Component);
+
+	var AppHeader = function (_React$Component2) {
+	  _inherits(AppHeader, _React$Component2);
+
+	  function AppHeader() {
+	    _classCallCheck(this, AppHeader);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(AppHeader).apply(this, arguments));
+	  }
+
+	  _createClass(AppHeader, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'header',
+	        { className: _app_header2.default.header },
+	        _react2.default.createElement(
+	          'h1',
+	          { className: _app_header2.default.title },
+	          'CSS Animathon'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: _app_header2.default.description },
+	          'hack-a-thon for learning css animations powered by #kosen10s'
+	        ),
+	        _react2.default.createElement(TwitterShareButton, null)
+	      );
+	    }
+	  }]);
+
+	  return AppHeader;
+	}(_react2.default.Component);
+
+	exports.default = AppHeader;
+
+/***/ },
+/* 180 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(181);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?module!./../../node_modules/stylus-loader/index.js!./app_header.styl", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?module!./../../node_modules/stylus-loader/index.js!./app_header.styl");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 181 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "._1Wd6OBFpW-Q9BbzLE4MLGf {\n  display: block;\n  margin: 60px 0;\n}\n._2-SGitMQYGH9oaipk2EOT3 {\n  font-size: 100px;\n  line-height: 120px;\n  margin-left: -10px;\n}\n._1fX4O1acqvnUT68eekPtau {\n  font-size: 24px;\n  margin-bottom: 10px;\n}\n._3oRq6waxOSUD744ZPJZd8g {\n  font-size: 18px;\n  display: inline-block;\n  padding: 5px 50px;\n  background-color: #00aced;\n  color: #fff;\n  text-decoration: none;\n}\n", ""]);
 
 	// exports
 	exports.locals = {
-		"title": "_3J4VfRJpp3mtQGOG0kubDH",
-		"description": "_2vQ-E5X29XddQ-7X-1InVG"
+		"header": "_1Wd6OBFpW-Q9BbzLE4MLGf",
+		"title": "_2-SGitMQYGH9oaipk2EOT3",
+		"description": "_1fX4O1acqvnUT68eekPtau",
+		"tweet": "_3oRq6waxOSUD744ZPJZd8g"
+	};
+
+/***/ },
+/* 182 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _entry = __webpack_require__(183);
+
+	var _entry2 = _interopRequireDefault(_entry);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Entry01 = function (_React$Component) {
+	  _inherits(Entry01, _React$Component);
+
+	  function Entry01() {
+	    _classCallCheck(this, Entry01);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Entry01).apply(this, arguments));
+	  }
+
+	  _createClass(Entry01, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'article',
+	        null,
+	        _react2.default.createElement(
+	          'h1',
+	          { className: _entry2.default.title },
+	          'CSS Animathon #1 (2016.07.16)'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: _entry2.default.description },
+	          '参加者は',
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://twitter.com/denari01'
+	            },
+	            'でなり'
+	          ),
+	          'と',
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://twitter.com/c_bata_'
+	            },
+	            'カレーメシ先輩'
+	          ),
+	          'のみになった。'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: _entry2.default.description },
+	          'でなりはPyCon JPのチケットを少し消化した後、 webpack / React の事始めを行った。 成果物はこのWebサイトである。 (ソース : ',
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://github.com/kosen10s/css-animathon/tree/gh-pages' },
+	            'GitHub'
+	          ),
+	          ')'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: _entry2.default.description },
+	          'カレーメシ先輩はPyCon JPのチケットを少し消化した後、 Web関連の技術をでなりに教えたり、 自分でもある程度 React Animation Component についてしらべつつ、 大半を、副収入(NOT プログラミング)に関する調査に費やしていた。'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: _entry2.default.description },
+	          '全体的にAnimathonじゃなかった。ただ勉強にはなった。 せっかくこのWebサイトという遊び場ができたので、次回こそAnimathonをしたい。'
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Entry01;
+	}(_react2.default.Component);
+
+	exports.default = Entry01;
+
+/***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(184);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?module!./../../node_modules/stylus-loader/index.js!./entry.styl", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?module!./../../node_modules/stylus-loader/index.js!./entry.styl");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "._3aZKANWGpBnHp1PT1ahvpL {\n  font-size: 32px;\n}\n._6HRH798MlTdpBcJT4N950 {\n  max-width: 800px;\n  font-size: 22px;\n  margin: 30px 0;\n}\n", ""]);
+
+	// exports
+	exports.locals = {
+		"title": "_3aZKANWGpBnHp1PT1ahvpL",
+		"description": "_6HRH798MlTdpBcJT4N950"
 	};
 
 /***/ }
