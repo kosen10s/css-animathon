@@ -21595,7 +21595,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'a',
-	        { href: 'https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fkosen10s.net%2Fcss-animathon&ref_src=twsrc%5Etfw&text=CSS%20animathon%20-%20hack-a-thon%20for%20learning%20css%20animathons%20powered%20by%20kosen10s&tw_p=tweetbutton&url=https%3A%2F%2Fkosen10s.net%2Fcss-animathon&via=kosen10s', className: _app_header2.default.tweet },
+	        { href: 'https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fkosen10s.net%2Fcss-animathon&ref_src=twsrc%5Etfw&text=CSS%20animathon%20-%20hack-a-thon%20for%20learning%20css%20animathons%20powered%20by%20kosen10s&tw_p=tweetbutton&url=http%3A%2F%2Fkosen10s.net%2Fcss-animathon&via=kosen10s', className: _app_header2.default.tweet },
 	        'Twitterでシェア'
 	      );
 	    }
