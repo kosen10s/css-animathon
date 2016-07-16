@@ -1,0 +1,37 @@
+{
+  "name": "css-animathon",
+  "version": "1.0.0",
+  "description": "hack-a-thon for learing css animathons powered by #kosen10s",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosen10s/css-animathon.git"
+  },
+  "author": "kosen10s",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kosen10s/css-animathon/issues"
+  },
+  "homepage": "https://github.com/kosen10s/css-animathon#readme",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.22.0",
+    "path": "^0.12.7",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.1.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.14.0"
+  }
+}
