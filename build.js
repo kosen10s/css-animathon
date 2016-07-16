@@ -83,8 +83,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./style.styl", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./style.styl");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?module!./../../node_modules/stylus-loader/index.js!./general.styl", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?module!./../../node_modules/stylus-loader/index.js!./general.styl");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -102,7 +102,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  color: #000;\n  font-family: Avenir, \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, Verdana, Roboto, \"\\6E38\\30B4\\30B7\\30C3\\30AF\", \"Yu Gothic\", \"\\6E38\\30B4\\30B7\\30C3\\30AF\\4F53\", \"YuGothic\", \"\\30D2\\30E9\\30AE\\30CE\\89D2\\30B4   Pro W3\", \"Hiragino Kaku Gothic Pro\", \"Meiryo UI\", \"\\30E1\\30A4\\30EA\\30AA\", Meiryo, \"\\FF2D\\FF33   \\FF30\\30B4\\30B7\\30C3\\30AF\", \"MS PGothic\", sans-serif;\n}\nhtml {\n  background-color: #ff0;\n}\n", ""]);
+	exports.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  max-width: 100%;\n}\nbody {\n  color: #000;\n  font-family: Avenir, \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, Verdana, Roboto, \"\\6E38\\30B4\\30B7\\30C3\\30AF\", \"Yu Gothic\", \"\\6E38\\30B4\\30B7\\30C3\\30AF\\4F53\", \"YuGothic\", \"\\30D2\\30E9\\30AE\\30CE\\89D2\\30B4   Pro W3\", \"Hiragino Kaku Gothic Pro\", \"Meiryo UI\", \"\\30E1\\30A4\\30EA\\30AA\", Meiryo, \"\\FF2D\\FF33   \\FF30\\30B4\\30B7\\30C3\\30AF\", \"MS PGothic\", sans-serif;\n  background-color: #ff0;\n  margin: 20px;\n}\nhtml {\n  border: 15px solid #000;\n  min-height: 100%;\n  box-sizing: border-box;\n}\n", ""]);
 
 	// exports
 
@@ -21463,6 +21463,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _app = __webpack_require__(177);
+
+	var _app2 = _interopRequireDefault(_app);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21488,12 +21492,12 @@
 	        null,
 	        _react2.default.createElement(
 	          'h1',
-	          null,
+	          { className: _app2.default.title },
 	          'CSS Animathon'
 	        ),
 	        _react2.default.createElement(
 	          'p',
-	          null,
+	          { className: _app2.default.description },
 	          'hack-a-thon for learning css animations powered by #kosen10s'
 	        )
 	      );
@@ -21504,6 +21508,49 @@
 	}(_react2.default.Component);
 
 	exports.default = App;
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(178);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?module!./../../node_modules/stylus-loader/index.js!./app.styl", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?module!./../../node_modules/stylus-loader/index.js!./app.styl");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "._3J4VfRJpp3mtQGOG0kubDH {\n  font-size: 100px;\n  line-height: 120px;\n}\n._2vQ-E5X29XddQ-7X-1InVG {\n  font-size: 24px;\n  margin-left: 10px;\n}\n", ""]);
+
+	// exports
+	exports.locals = {
+		"title": "_3J4VfRJpp3mtQGOG0kubDH",
+		"description": "_2vQ-E5X29XddQ-7X-1InVG"
+	};
 
 /***/ }
 /******/ ]);

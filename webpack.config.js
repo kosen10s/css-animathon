@@ -31,7 +31,7 @@ const common = {
       },
       {
         test: /\.styl?$/,
-        loaders: ['style', 'css', 'stylus'],
+        loaders: ['style', 'css?module', 'stylus'],
         include: PATHS.app,
       },
     ]

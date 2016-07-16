@@ -1,4 +1,4 @@
-import './stylus/style.styl';
+import './stylus/general.styl';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
